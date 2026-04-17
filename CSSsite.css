@@ -1,0 +1,12 @@
+* {
+    background-color: black;
+    Color: white;
+    font-family: 'Montserrat', 'Poppins', 'Inter', 'Roboto', Arial, sans-serif;
+    text-align : center;
+}
+    h1 {
+  font-size: 8vw;
+}
+.center {
+  font-size: 3vw;
+}
