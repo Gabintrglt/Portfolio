@@ -5,35 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GabinTrigalet.com</title>
     <link rel="stylesheet" href="csssite.css" />
+<script src="site.js" defer></script>
 </head>
+
 <body>
-    <h1>GabinTrigalet.com</h1>
-    <h2>Mon portfolio</h2>
-    
-    <br />
-    <br />
-    <h2>Index</h2>
-    <p>Bienvenue sur mon site je suis entrain d'apprendre le codage informatique 
-        pour devenir développeur Full-stack c'est à dire quelqu'un qui code un site de A à Z.
+  <section>
+    <select onchange="changeLanguage(this.value)">
+  <option value="fr">FR</option>
+  <option value="en">EN</option>
+  <option value="es">ES</option>
+</select>
+  </section>
+
+<header>
+    <h1 data-i18n="title">GabinTrigalet.com</h1>
+    <p  data-i18n="undertitle" class="center">Ceci est mon portfolio</p>
+</header>
+
+<main>
+
+<section>
+    <h2  data-i18n="presentation">Présentation</h2>
+    <p data-i18n="intro">
+        Bienvenue sur mon site. Je suis en train d'apprendre le développement
+        pour devenir développeur full-stack.
     </p>
-    <br />
-    <h2>Compétences</h2>
-    <ul>
-    <li>HTML</li>
-    <li>Javascript</li>
-    <li>CSS</li>
-    <li>Python</li>
-    <li>C</li>
-</ul>
-    <br />
-    <h2>projets</h2>
-    <p>Pas encore de projets concrets pour l'instants</p>
-    <br />
-    <br />
-    <h2>À propos</h2>
-    <p>je réalise des projets de code depuis deux ans et ceci est mon tout premier site</p>
-    <br />
-    <h2>Contacts</h2>
-    <p>e-mail : gabin.asylium@gmail.com</p>
+</section>
+
+<section>
+    <h2 data-i18n="competences">Compétences</h2>
+    <button>
+<div class="social-btn">
+  <a href="https://www.python.org/" class="circle">
+    <img src="python.svg" alt="Python">
+  </a>
+  <span>Python</span>
+</div>
+</button>
+<button>
+<div class="social-btn">
+  <a href="https://en.cppreference.com/c" class="circle">
+    <img src="c.svg" alt="C">
+  </a>
+  <span>C</span>
+</div>
+</button>
+<button>
+<div class="social-btn">
+  <a href="https://html.spec.whatwg.org/" class="circle">
+    <img src="html5.svg" alt="html">
+  </a>
+  <span>HTML 5</span>
+</div>
+</button>
+
+<button>
+<div class="social-btn">
+  <a href="https://www.w3.org/Style/CSS/" class="circle">
+    <img src="css_old.svg" alt="CSS">
+  </a>
+  <span>CSS</span>
+</div>
+</button>
+
+<button>
+<div class="social-btn">
+  <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" class="circle">
+    <img src="javascript.svg" alt="javascript">
+  </a>
+  <span>javascript</span>
+</div>
+</button>
+
+
+
+</section>
+
+<section>
+    <h2 data-i18n="projets">Projets</h2>
+    <p data-i18n="explicationprojets">Pas encore de projets concrets pour l'instant.</p>
+</section>
+
+<section>
+    <h2 data-i18n= "apropos">À propos</h2>
+    <p data-i18n="explicationapropos">
+        Je réalise des petits projets de code depuis deux ans.
+        Ceci est mon tout premier site.
+    </p>
+</section>
+
+<section>
+  <div class="social-btn">
+    <a href="https://github.com/Gabintrglt" class="circle">
+      <img src="github_dark1.svg" alt="GitHub">
+    </a>
+    <span>GitHub</span>
+  </div>
+</section>
+
+
+<section>
+    <h2 data-i18n="contacts">Contact</h2>
+    <p data-i18n="email">Email : gabin.asylium@gmail.com</p>
+</section>
+
+</main>
+
+<footer>
+    <p>© GabinTrigalet 2026</p>
+</footer>
+
 </body>
 </html>
